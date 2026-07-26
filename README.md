@@ -63,3 +63,49 @@ Want to run the simulation, train the model, or launch the dashboard on your own
 ```bash
 git clone [https://github.com/Arpitananda123/Honeywell-Choke-Controller.git](https://github.com/Arpitananda123/Honeywell-Choke-Controller.git)
 cd Honeywell-Choke-Controller
+```
+
+### 2. Create a Virtual Environment (Recommended)
+```bash
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Execute the Pipeline
+
+You can run the entire engineering pipeline from scratch using the source scripts:
+
+```bash
+# Step 1: Generate the 5,000-hour step-test data
+python src/01_generate_data.py
+
+# Step 2: Train the Random Forest Digital Twin
+python src/02_model_identification.py
+
+# Step 3: Evaluate the MPC against the 3 core scenarios
+python src/04_evaluate_scenarios.py
+```
+
+### 5. Launch the Web App
+
+```bash
+streamlit run app.py
+```
+## 🛠️ Tech Stack
+
+*   **Language:** Python 3.11+
+*   **Machine Learning:** `scikit-learn`, `joblib`
+*   **Data Processing:** `pandas`, `numpy`
+*   **Visualization:** `matplotlib`, `Streamlit`
+*   **Architecture Design:** Digital Twin Modeling, Lagrangian Cost Functions, Model Predictive Control (MPC)
+
+*Engineered by Arpita Nanda for the Honeywell Hackathon.*
