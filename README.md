@@ -16,7 +16,7 @@ In industrial oil and gas operations, safely managing a well's production choke 
 The system autonomously evaluates candidate choke movements in real-time to maximize the target oil flow rate ($Q$) while mathematically preventing catastrophic pressure breaches in the Wellhead (WHP), Flowline (FLP), and Bottom-Hole (BHP).
 
 ### 🚀 Live Interactive Dashboard
-**👉 [Launch the Live Streamlit Controller Here](https://your-streamlit-url-here.streamlit.app/)**
+**👉 [Launch the Live Streamlit Controller Here](https://honeywell-choke-controller-wdhuqcjxdofxc4davwekfk.streamlit.app/)**
 *(Note: An interactive cloud-deployment of this controller's logic)*
 
 ---
